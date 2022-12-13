@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Roboto', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-variant: normal;
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+div.img01 {
+    
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(60, 65, 65, 0.486);
+    color: white;
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0, 0, 0, 0.37;
+}
+section.imagem2 {
+    background-color: rgba(60, 65, 65, 0.39);
+    color: white;
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 8px rgba(0, 0, 0, 0.37);
+}
+
+section.imagem > p {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(54, 54, 54, 0.527);
+    text-shadow: 1px 1px 0px black;
+   
+}
+section.imagem2 > p {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(54, 54, 54, 0.527);
+    text-shadow: 1px 1px 0px black;
+}  
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
